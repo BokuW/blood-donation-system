@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #e0f7fa;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e7ea;
+  height: 7.6rem;
+  padding: 0 4.8rem;
+}
+.view {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.logo {
+  height: 4.2rem;
+}
+.link-btns {
+  border: none;
+  background-color: inherit;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ff1111;
+}
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+  margin: 30rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.heading-primary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.description {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.hero {
+  text-align: center;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin: 1.2rem auto;
+  text-decoration: none;
+
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ff1111b9;
+}
+/* ************************ */
+/* Donor Form styling */
+/* ************************ */
+.section-donor {
+  max-width: 120rem;
+  margin: 10rem auto;
+  padding: 4.8rem 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-color: #e0e7ea;
+  transition: all 1s;
+}
+.intro {
+  text-align: center;
+}
+.notify {
+  margin-bottom: 3.6rem;
+  font-size: 1.8rem;
+}
+.info-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.info-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.info-form input,
+.info-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #e0f7fa;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.info-form input::placeholder {
+  color: #aaa;
+}
+.form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #e0f7fa;
+}
+.btn--form {
+  background-color: #e0f7fa;
+  font-weight: bold;
+  align-self: end;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.btn--form:hover {
+  background-color: #ff1111b9;
+  color: #555;
+}
+/* ************************ */
+/* Patient Form styling */
+/* ************************ */
+.section-patient {
+  max-width: 120rem;
+  margin: 10rem auto;
+  padding: 4.8rem 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-color: #e0e7ea;
+  transition: all 1s;
+}
+
+.section-bank {
+  max-width: 120rem;
+  margin: 10rem auto;
+  padding: 4.8rem 2.4rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-color: #e0e7ea;
+  transition: all 1s;
+}
+/* hide all form sections */
+.section-donor,
+.section-patient,
+.section-bank {
+  display: none;
+}
